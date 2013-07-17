@@ -1,10 +1,19 @@
-.lucky_number {
-  border: 9px blue solid;
+.box {
+  border: 9px #0088CC solid;
   border-radius: 100px;
   font-size: xx-large;
   height: 40px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   padding-top: 15px;
+}
+
+.lucky_number {
   width: 45px;
+}
+
+.sign {
+  width: 180px;
 }
 
 .shadow {
