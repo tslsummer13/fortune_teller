@@ -1,5 +1,5 @@
 FortuneTeller::Application.routes.draw do
-  root :to => "fortunes#numbers"
+  root "fortunes#numbers"
 
   # get("/lucky_numbers", { :controller => "fortunes", :action => "numbers" })
   get "/lucky_numbers", :controller => "fortunes", :action => "numbers"

@@ -17,4 +17,16 @@ class HoroscopesController < ApplicationController
   # You have access to a class called Horoscope
   # You can do Horoscope.find_by({ :sign => "leo" }) to retrieve a single horoscope Hash
   # Each horoscope hash has two keys -- :sign and :fortune
+
+  def aries
+    @horoscope = Horoscope.find_by({ :sign => "aries" })
+  end
 end
+
+
+
+
+
+
+
+
