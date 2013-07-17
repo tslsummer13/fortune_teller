@@ -1,14 +1,19 @@
 <div class="row">
   <div class="span12">
-    <h1>Your Lucky Numbers</h1>
+    <div class="page-header">
+      <h1>
+        Your Lucky Numbers
+        <small><%= Date.today.strftime("%A, %B %e") %></small>
+      </h1>
+    </div>
   </div>
 </div>
 
 <div class="row">
   <div class="span12">
-    <ul>
+    <ul class="inline">
       <% @lucky_numbers.each do |num| %>
-        <li><%= num %></li>
+        <li class="lucky_number text-center shadow"><%= num %></li>
       <% end %>
     </ul>
   </div>
