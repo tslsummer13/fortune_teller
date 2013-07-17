@@ -20,6 +20,17 @@ class HoroscopesController < ApplicationController
 
   def aries
     @horoscope = Horoscope.find_by({ :sign => "aries" })
+    render 'zodiac'
+  end
+
+  def taurus
+    @horoscope = Horoscope.find_by({ :sign => "taurus" })
+    render 'zodiac'
+  end
+
+  def gemini
+    @horoscope = Horoscope.find_by({ :sign => "gemini" })
+    render 'zodiac'
   end
 end
 
